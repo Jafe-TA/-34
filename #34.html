@@ -1,0 +1,31 @@
+<!--
+
+- Confeccionar una página que permita abrir otra ventana cuando se presiona un botón.
+Dicha ventana debe tener como ancho 600 pixeles y alto 300 pixeles.
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function abrirParametros()
+  {
+    var ventana=open('','','status=yes,width=600,height=300,menubar=yes');
+    ventana.document.write("esta ventana posee como ancho 600 pixeles y alto 300 pixeles.");
+  }
+</script>
+
+<p>Este programa permite analizar la llamada a
+distintas responsabilidades del objeto window.</p>
+<form>
+  <input type="button" value="boton" onClick="abrirParametros()" >
+  <br>
+</form>
+</body>
+</html>
+
